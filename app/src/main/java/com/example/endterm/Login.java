@@ -32,15 +32,15 @@ public class Login extends AppCompatActivity {
             String savedPassword = sharedPreferences.getString(username, "");
 
             if (savedPassword.equals(password)) {
-                startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                startActivity(new Intent(Login.this, Main.class));
                 finish();
             } else {
-                Toast.makeText(LoginActivity.this, "Invalid credentials", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Login.this, "Invalid credentials", Toast.LENGTH_SHORT).show();
             }
         });
 
         btnRegister.setOnClickListener(v -> {
-            startActivity(new Intent(LoginActivity.this, RegistrationActivity.class));
+            startActivity(new Intent(Login.this, RegistrationActivity.class));
         });
     }
 }
