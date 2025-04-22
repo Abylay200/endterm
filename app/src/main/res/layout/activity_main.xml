@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Main">
+
+    <Button
+        android:id="@+id/btnCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Open Cart" />
+
+    <Button
+        android:id="@+id/btnCustomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Show Custom Dialog" />
+
+    <Button
+        android:id="@+id/btnStartService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Foreground Service" />
+
+</LinearLayout>
